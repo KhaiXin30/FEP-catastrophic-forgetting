@@ -2,6 +2,8 @@
 
 This project explores the relationship between **catastrophic forgetting** in neural networks and the **Free Energy Principle (FEP)** from neuroscience. We study how a model that learns a new task using **LoRA adapters** starts to forget its **original task**, and how this forgetting shows up as changes in “surprise” (free energy) over the original labels. On top of this baseline, we add several **regularizers** (L1, L2, and a Free-Energy regularizer) to see whether they can reduce catastrophic forgetting.
 
+A short video walkthrough is available on YouTube: https://www.youtube.com/watch?v=FQ22gs9RCHU
+
 ## 1. Project Overview
 
 ### Key Hypothesis
