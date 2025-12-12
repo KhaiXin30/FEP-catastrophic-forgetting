@@ -1,0 +1,33 @@
+name: bionb
+
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core
+  - python=3.11
+  - numpy>=1.24
+  - pandas>=2.0
+
+  # ML / DL
+  - pytorch::pytorch>=2.0  # CPU build by default
+
+  # Plotting
+  - matplotlib>=3.7
+  - seaborn>=0.13
+
+  # Statistics
+  - scipy>=1.11
+
+  # Notebooks
+  - jupyterlab>=4.0
+  - ipykernel>=6.0
+
+  # So we can still install a couple of pip-only things
+  - pip
+
+  # pip-only deps go here
+  - pip:
+      - torchviz>=0.0.2
